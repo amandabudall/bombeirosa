@@ -2,18 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <title>bombeiros</title>
+    <title>ferimentos</title>
+    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-
+    <div class="tela1">
         <nav>
-            <div class="logo"><h1>k</h1></div>
+            <div class="logo">
+                <img src="logo_pequena.png">
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                 
+                </span>
+            </ul>
         </nav>
+    </div>
+   <section class="container">
+    <header>Ferimentos e Fraturas</header>
+    <form class="form">
+        <div class="input-box">
+            <div class="caixag">
+                <div class="caixa1">
+                    <div class="local">
+                        <label>Local</label>
+                    <input required="" placeholder="Insira o local." type="text">
+                    </div>
+                    <div class="peq">
+                        <div class="la">
+                            <div class="lado">
+                                 <label>Lado</label>
+                                <input required="" placeholder="Insira o lado." type="text">
+                            </div>
+                        </div>
+                        <div class="fa">
+                            <div class="face">
+                                 <label>Face</label>
+                                <input required="" placeholder="Insira a face." type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tipo">
+                        <label>Tipo</label>
+                    <input required="" placeholder="Insira o tipo." type="text">
+                    </div>
+                   
+                </div>
+                <div class="caixa2">
+                    <div class="local">
+                        <label>Local</label>
+                    <input required="" placeholder="Insira o local." type="text">
+                    </div>
+                <div class="peq">
+                    <div class="la">
+                        <div class="lado">
+                             <label>Lado</label>
+                            <input required=""  type="text">
+                        </div>
+                    </div>
+                    <div class="fac">
+                        <div class="face">
+                             <label>Face</label>
+                            <input required="" placeholder="Insira a face." type="text">
+                        </div>
+                    </div>
+                </div>
+                    <div class="tipo">
+                        <label>Tipo</label>
+                    <input required="" placeholder="Insira o tipo." type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
     
+   </section>
+   <button>Salvar</button>
 
     <script src="./app.js"></script>
 </body>
