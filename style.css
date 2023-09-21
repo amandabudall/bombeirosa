@@ -143,10 +143,6 @@
     }
     .caixa1 input{
         border-color: black 2px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px;
     }
     .peq{
         display: flex;
@@ -160,7 +156,7 @@
    }
    
     .caixa1{
-        background: pink;
+        background: rgb(226, 226, 226);
         border-radius: 10px;
         left: 5px;
         width: 300px;
@@ -173,7 +169,7 @@
         font-weight: bold;
     }
     .caixa2{
-        background: rgb(169, 89, 103);
+        background: rgb(221, 221, 221);
         border-radius: 10px;
         left: 5px;
         width: 300px;
@@ -187,7 +183,7 @@
     }
     button{
         background-color: black;
-        right: 30px;
+        color: aliceblue;
     }
   }
   
