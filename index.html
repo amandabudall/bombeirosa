@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ferimentos</title>
+    <title>Ferimentos</title>
     <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
@@ -39,18 +39,26 @@
                     <input required="" placeholder="Insira o local." type="text">
                     </div>
                     <div class="peq">
-                        <div class="la">
-                            <div class="lado">
-                                 <label>Lado</label>
-                                <input required="" placeholder="Insira o lado." type="text">
-                            </div>
-                        </div>
                         <div class="fa">
                             <div class="face">
-                                 <label>Face</label>
-                                <input required="" placeholder="Insira a face." type="text">
+                                <label>Face</label>
+                                <input required="" id="checkbox-face" placeholder="Insira a face." type="checkbox" onclick="
+                                     let checked = document.getElementById('checkbox-face').checked;
+                                     let sideDiv = document.getElementsByClassName('la')[0].hidden = !checked;
+                                    ">
                             </div>
                         </div>
+                        <div class="la" hidden>
+                            <div class="lado">
+                                 <label>Lado Direito</label>
+                                 <input required="" placeholder="Lado esquerdo" type="checkbox" value="esquerdo-face">
+                            </div>
+                            <div class="lado">
+                                <label>Lado Esquerdo</label>
+                                <input required="" placeholder="Lado direito" type="checkbox" value="direito-face">
+                            </div>
+                        </div>
+
                     </div>
                     <div class="tipo">
                         <label>Tipo</label>
