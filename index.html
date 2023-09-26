@@ -71,20 +71,28 @@
                         <label>Local</label>
                     <input placeholder="Insira o local." type="text">
                     </div>
-                <div class="peq">
-                    <div class="la">
-                        <div class="lado">
-                             <label>Lado</label>
-                            <input placeholder="Insira o lado."  type="text">
+                    <div class="peq">
+                        <div class="fa">
+                            <div class="face">
+                                <label>Face</label>
+                                <input id="checkbox-face" placeholder="Insira a face." type="checkbox" onclick="
+                                     let checked = document.getElementById('checkbox-face').checked;
+                                     let sideDiv = document.getElementsByClassName('la')[0].hidden = !checked;
+                                    ">
+                            </div>
                         </div>
-                    </div>
-                    <div class="fac">
-                        <div class="face">
-                             <label>Face</label>
-                            <input placeholder="Insira a face." type="text">
+                        <div class="la" hidden>
+                            <div class="lado">
+                                 <label>Lado Direito</label>
+                                 <input  placeholder="Lado esquerdo" type="checkbox" value="esquerdo-face">
+                            </div>
+                            <div class="lado">
+                                <label>Lado Esquerdo</label>
+                                <input placeholder="Lado direito" type="checkbox" value="direito-face">
+                            </div>
                         </div>
+
                     </div>
-                </div>
                     <div class="tipo">
                         <label>Tipo</label>
                     <input placeholder="Insira o tipo." type="text">
